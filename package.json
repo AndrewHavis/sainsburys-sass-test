@@ -1,0 +1,25 @@
+{
+  "name": "sainsburys-sass-test",
+  "version": "1.0.0",
+  "description": "The SASS part of the Sainsbury's technical test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewHavis/sainsburys-sass-test.git"
+  },
+  "keywords": [
+    "sainsburys",
+    "sass",
+    "design",
+    "tests"
+  ],
+  "author": "Andrew Havis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewHavis/sainsburys-sass-test/issues"
+  },
+  "homepage": "https://github.com/AndrewHavis/sainsburys-sass-test#readme"
+}
