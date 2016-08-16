@@ -1,0 +1,87 @@
+// Note that in this file, view-specific variables are denoted with the 'd-' or 'm-' prefixes, where 'd' is desktop and 'm' is mobile
+
+// Global
+$font: Helvetica, Arial, sans-serif;
+$breakpoint-width: 1380px;
+
+// Header-specific
+$d-header-size: 3em;
+$d-logo-spacing: 1em; // The spacing between the logo and header text
+$d-header-social-icons-float: right;
+$d-header-social-icons-position: absolute;
+$d-header-social-icons-top: 25px;
+$d-header-social-icons-right: 5px;
+$d-header-social-icons-box-width: 350px;
+$d-header-social-icons-width: 80px;
+$m-header-size: 3em;
+$m-header-vertical-align: middle;
+$m-logo-spacing: ($d-logo-spacing / 2);
+
+// Menu-specific
+$d-menu-list-style: none;
+$d-menu-margin: 0 auto;
+$d-menu-padding: 0;
+$d-menu-width: 100%;
+$d-menu-position: absolute;
+$d-menu-text-align: center;
+$d-menu-text-colour: black;
+$d-menu-top: 25%;
+$d-menu-left: 50%;
+$d-menu-margin: auto;
+$d-menu-text-align: center;
+$d-menu-border: 1px solid black;
+$d-menu-background-colour: #CCCCCC;
+$d-menu-display: inline-block;
+$d-menu-item-margin: 0;
+$d-menu-item-padding: 0;
+$d-menu-item-width: 16.6%;
+$d-menu-hover-background-colour: #333333;
+$d-menu-hover-text-colour: #FFFFFF;
+$m-menu-list-style: none;
+$m-menu-border: 1px solid black;
+$m-menu-background-colour: #FFFFFF;
+$m-menu-margin: 0;
+$m-menu-padding: 0;
+$m-menu-width: 200px;
+$m-menu-text-align: left;
+$m-menu-display: inline-block;
+$m-menu-position: absolute;
+$m-menu-left: 46.34%;
+$m-menu-button-border: 1px solid black;
+$m-menu-button-background-colour: #CCCCCC;
+$m-menu-button-padding: 1em;
+$m-menu-button-text-align: center;
+$m-menu-button-margin: auto;
+$m-menu-button-cursor: pointer;
+
+// Body-specific
+$d-content-display: inline-block;
+$d-content-width: 65%;
+$d-content-border-right: 1px solid black;
+$d-content-padding-right: 1em;
+$d-content-hero-image-width: 800px;
+$d-content-hero-image-height: 600px;
+$d-sidebar-display: inline-block;
+$d-sidebar-width: 30%;
+$d-sidebar-vertical-align: top;
+$d-sidebar-text-align: center;
+$d-sidelinks-float: right;
+$d-sidelinks-width: 300px;
+$m-content-display: inline-block;
+$m-content-width: 100%;
+$m-content-text-align: center;
+$m-content-hero-image-width: ($d-content-hero-image-width / 2);
+$m-content-hero-image-height: ($d-content-hero-image-height / 2);
+$m-sidelinks-display: block;
+$m-sidelinks-font-size: 16pt;
+$m-sidelinks-text-align: left;
+$m-sidebar-display: none;
+
+// Footer-specific
+$d-footer-border: 1px solid black;
+$d-footer-background-colour: #CCCCCC;
+$m-footer-border-top: 1px solid black;
+$m-footer-background-colour: #CCCCCC;
+$m-footer-social-icons-margin: auto;
+$m-footer-social-icons-box-width: 250px;
+$m-footer-social-icons-width: 60px;

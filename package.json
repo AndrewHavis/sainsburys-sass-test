@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/AndrewHavis/sainsburys-sass-test#readme",
   "devDependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "node-sass": "^3.8.0"
   }
 }

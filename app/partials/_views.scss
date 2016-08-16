@@ -1,0 +1,214 @@
+// Define our breakpoint between desktop and mobile views
+@media (min-width: $breakpoint-width) {
+    // Desktop
+    body {
+
+        a {
+            color: black;
+        }
+
+        #header-container {
+            .headerPrimary {
+                font-size: $d-header-size;
+                img { // Logo
+                    margin-right: $d-logo-spacing;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+            aside {
+                float: $d-header-social-icons-float;
+                position: $d-header-social-icons-position;
+                top: $d-header-social-icons-top;
+                right: $d-header-social-icons-right;
+                width: $d-header-social-icons-box-width;
+                ul {
+                    list-style-type: $d-menu-list-style;
+                    margin: $d-menu-margin;
+                    padding: $d-menu-padding;
+                    width: $d-menu-width;
+                    li {
+                        display: $d-menu-display;
+                        img {
+                            width: $d-header-social-icons-width;
+                        }
+                    }
+                }
+            }
+        }
+
+        #menu-container {
+            border: $d-menu-border;
+            background-color: $d-menu-background-colour;
+            .btnMobileMenuContainer {
+                display: none; // Don't display the mobile menu button
+            }
+            ul.menu {
+                list-style-type: $d-menu-list-style;
+                width: $d-menu-width;
+                margin: $d-menu-margin;
+                padding: $d-menu-padding;
+                text-align: $d-menu-text-align;
+                li {
+                    display: $d-menu-display;
+                    margin: $d-menu-item-margin;
+                    padding: $d-menu-item-padding;
+                    width: $d-menu-item-width;
+                    a {
+                        color: $d-menu-text-colour;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: $d-menu-hover-text-colour;
+                    }
+                }
+                li:hover {
+                    color: $d-menu-hover-text-colour;
+                    background-color: $d-menu-hover-background-colour;
+                }
+            }
+            ul.mobileMenu {
+                display: none; // Don't show the mobile menu
+            }
+        }
+
+        #body-container {
+            div.content {
+                display: $d-content-display;
+                border-right: $d-content-border-right;
+                width: $d-content-width;
+                padding-right: $d-content-padding-right;
+                div.sideLinks {
+                    float: $d-sidelinks-float;
+                    width: $d-sidelinks-width;
+                }
+                div.mobileSideLinks {
+                    display: none;
+                }
+                img.heroImage {
+                    width: $d-content-hero-image-width;
+                    height: $d-content-hero-image-height;
+                }
+            }
+            aside.sidebar {
+                display: $d-sidebar-display;
+                width: $d-sidebar-width;
+                vertical-align: $d-sidebar-vertical-align;
+                text-align: $d-sidebar-text-align;
+            }
+        }
+
+        #footer-container {
+            border-top: $d-footer-border;
+            background-color: $d-footer-background-colour;
+            height: 30px;
+            aside {
+                display: none; // Don't display the social icons in the footer
+            }
+        }
+
+    }
+}
+
+@media (max-width: $breakpoint-width - 1) {
+    // Mobile
+    body {
+
+        a {
+            color: black;
+        }
+
+        #header-container {
+            .headerPrimary {
+                font-size: $m-header-size;
+                vertical-align: $m-header-vertical-align;
+                img { // Logo
+                    margin-right: $m-logo-spacing;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+            aside {
+                display: none; // Don't display the social icons in the header
+            }
+        }
+
+        #menu-container {
+            .btnMobileMenuContainer {
+                text-align: $m-menu-button-text-align;
+                .btnMobileMenu {
+                    border: $m-menu-button-border;
+                    background-color: $m-menu-button-background-colour;
+                    padding: $m-menu-button-padding;
+                    margin: $m-menu-button-margin;
+                    cursor: $m-menu-button-cursor;
+                }
+            }
+            .btnMobileMenuContainer:hover ul.mobileMenu {
+                display: block;
+            }
+            ul.mobileMenu {
+                display: none; // Don't show this menu initially (we will display it when the button is clicked)
+                border: $m-menu-border;
+                background-color: $m-menu-background-colour;
+                list-style-type: $m-menu-list-style;
+                width: $m-menu-width;
+                margin: $m-menu-margin;
+                padding: $m-menu-padding;
+                text-align: $m-menu-text-align;
+                position: $m-menu-position;
+                left: $m-menu-left;
+            }
+            ul.menu {
+                display: none; // Don't show the desktop menu
+            }
+        }
+
+        #body-container {
+            div.content {
+                display: $m-content-display;
+                width: $m-content-width;
+                text-align: $m-content-text-align;
+                div.contentText div.sideLinks {
+                    display: none;
+                }
+                div.contentText div.mobileSideLinks {
+                    display: $m-sidelinks-display;
+                    font-size: $m-sidelinks-font-size;
+                    text-align: $m-sidelinks-text-align;
+                }
+                img.heroImage {
+                    width: $m-content-hero-image-width;
+                    height: $m-content-hero-image-height;
+                }
+            }
+            aside.sidebar {
+                display: none; // Don't show the sidebar
+            }
+        }
+
+        #footer-container {
+            border-top: $m-footer-border-top;
+            background-color: $m-footer-background-colour;
+            aside {
+                margin: $m-footer-social-icons-margin;
+                width: $m-footer-social-icons-box-width;
+                ul {
+                    list-style-type: $m-menu-list-style;
+                    margin: $m-menu-margin;
+                    padding: $m-menu-padding;
+                    width: $m-menu-width;
+                    li {
+                        display: $m-menu-display;
+                        img {
+                            width: $m-footer-social-icons-width;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
