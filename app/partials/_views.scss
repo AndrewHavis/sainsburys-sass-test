@@ -179,9 +179,12 @@
                     font-size: $m-sidelinks-font-size;
                     text-align: $m-sidelinks-text-align;
                 }
-                img.heroImage {
-                    width: $m-content-hero-image-width;
-                    height: $m-content-hero-image-height;
+                div.heroImageContainer {
+                    text-align: $m-content-hero-image-align;
+                    img.heroImage {
+                        width: $m-content-hero-image-width;
+                        height: $m-content-hero-image-height;
+                    }
                 }
             }
             aside.sidebar {
