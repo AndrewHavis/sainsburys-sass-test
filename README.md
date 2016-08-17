@@ -1,5 +1,5 @@
-# Sainsbury's SASS Test
-This is the SASS test for the Sainsbury's Front-End Developer process.
+# Sainsbury's Design Test
+This is the SASS design test for the Sainsbury's Front-End Developer process.
 
 ## Installation
 To install this application, simply run `npm install` after cloning the repository in the usual way.
